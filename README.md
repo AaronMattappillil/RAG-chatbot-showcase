@@ -4,6 +4,12 @@
 
 This project demonstrates the design and implementation of Retrieval-Augmented Generation (RAG) chatbots using n8n workflow automation, Pinecone Vector Database, and Google Gemini Embeddings.
 
+This repository documents two domain-specific Retrieval-Augmented Generation (RAG) chatbots. While both systems share the same architecture, they operate on different knowledge bases:
+
+- IPSR Course Assistant
+- Union Budget Assistant
+
+The project demonstrates how a single RAG pipeline can be adapted to multiple domains by changing the underlying document corpus and retrieval context.
 The system enables users to query domain-specific knowledge bases while ensuring responses are grounded in retrieved documents.
 
 ## Features
@@ -16,6 +22,29 @@ The system enables users to query domain-specific knowledge bases while ensuring
 * Custom system prompts
 * Knowledge base ingestion pipeline
 * Context-aware conversational responses
+
+## Technology Stack
+
+* n8n
+* Pinecone
+* Google Gemini
+* Vector Search
+* RAG Architecture
+* Google Drive Integration
+
+## Chatbot Implementations
+
+This repository contains documentation for two Retrieval-Augmented Generation (RAG) chatbot implementations built on the same underlying architecture.
+
+### IPSR Course Assistant
+- Domain: Educational and training programs
+- Knowledge Source: IPSR course information and training details
+- Purpose: Answer user queries regarding courses, certifications, fees, schedules, and training programs.
+
+### Union Budget Assistant
+- Domain: Government financial documents
+- Knowledge Source: Union Budget reports and related documents
+- Purpose: Provide context-aware answers and insights from budget documents through semantic retrieval.
 
 ## System Architecture
 ```text
@@ -31,24 +60,6 @@ Google Gemini
 ↓
 Response Generation
 ```
-## Technology Stack
-
-* n8n
-* Pinecone
-* Google Gemini
-* Vector Search
-* RAG Architecture
-* Google Drive Integration
-
-## Projects Included
-
-### IPSR Course Assistant
-
-A chatbot that answers questions about IPSR training programs using a vectorized course knowledge base.
-
-### Union Budget Assistant
-
-A chatbot that answers questions regarding Union Budget documents using retrieval-augmented generation.
 
 ## Knowledge Base Pipeline
 ```text
@@ -66,14 +77,14 @@ Semantic Retrieval
 ```
 ## Screenshots
 
-See: docs/screenshots/
+See: docs/
 
 ## Documentation
 
-* Architecture diagrams
-* Workflow screenshots
-* Knowledge base indexing examples
-* Prompt engineering examples
+* System Overview
+* Workflows
+* Screenshots
+* System Prompts
 
 ## Future Improvements
 
